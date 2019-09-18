@@ -1,0 +1,9 @@
+*.log
+*.eblif
+*.place
+*.rpt
+*.net
+*.route
+*.bit
+*.fasm
+*.frames

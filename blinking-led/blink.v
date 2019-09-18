@@ -1,5 +1,10 @@
-module top (output rgb0_g);
-   (* KEEP, DONT_TOUCH *)
-   LUT2 #( .INIT(4'b0) ) lut ( .O(rgb0_g));
+module top (
+            input [3:0] sw,
+            output [3:0] green_leds
+            );
 
+   assign green_leds = sw;
+
+   //(* KEEP, DONT_TOUCH *)
+   //LUT2 #( .INIT(3'b010) ) lut ( .O(green_leds));
 endmodule

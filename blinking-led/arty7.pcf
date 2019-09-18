@@ -1,6 +1,11 @@
 # Definitions for the rgb0.
 # Check the schematic for more:
 # https://reference.digilentinc.com/_media/reference/programmable-logic/arty-a7/arty_a7_sch.pdf
-set_io rgb0_g F6
-
-
+set_io green_leds[0] F6
+set_io green_leds[1] J4
+set_io green_leds[2] J2
+set_io green_leds[3] H6
+set_io sw[0] A8
+set_io sw[1] C11
+set_io sw[2] C10
+set_io sw[3] A10
