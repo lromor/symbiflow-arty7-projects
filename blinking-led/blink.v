@@ -1,3 +1,5 @@
 module top (output rgb0_g);
-   reg t = 1'b0;
+   (* KEEP, DONT_TOUCH *)
+   LUT2 #( .INIT(4'b0) ) lut ( .O(rgb0_g));
+
 endmodule

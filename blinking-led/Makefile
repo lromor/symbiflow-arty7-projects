@@ -45,6 +45,7 @@ PCF=arty7.pcf
 
 # Flashing. Just use good 'ol openocd. Everyone should've installed that on their machine.
 OPENOCD_BIN?=openocd
+DIGILENT_CONFIG=openocd-digilent-arty7.cfg
 
 PROJECT=blink
 
@@ -80,4 +81,4 @@ prog: top.bit
 	$(OPENOCD_BIN) -f $(DIGILENT_CONFIG) -c "init ; pld load 0 $^ ; exit"
 
 clean:
-	rm -f *.log *.eblif *.place *.rpt *.net *.route
+	rm -f *.log *.eblif *.place *.rpt *.net *.route *.fasm *.frames
